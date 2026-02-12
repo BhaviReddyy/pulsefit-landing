@@ -18,6 +18,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px 60px;
+    position: relative;
 }
 
 .logo {
@@ -35,11 +36,6 @@ body {
 .nav-links a {
     text-decoration: none;
     color: white;
-    transition: 0.3s;
-}
-
-.nav-links a:hover {
-    color: #22c55e;
 }
 
 .cta-btn {
@@ -48,6 +44,15 @@ body {
     border: none;
     border-radius: 6px;
     color: white;
+    cursor: pointer;
+}
+
+
+/* HAMBURGER */
+
+.menu-toggle {
+    display: none;
+    font-size: 28px;
     cursor: pointer;
 }
 
@@ -79,7 +84,6 @@ body {
 .hero img {
     width: 350px;
     border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
 
@@ -92,7 +96,7 @@ body {
 
 .section-title {
     font-size: 32px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .feature-container {
@@ -107,21 +111,10 @@ body {
     padding: 30px;
     border-radius: 10px;
     width: 280px;
-    transition: 0.3s;
-}
-
-.feature-card:hover {
-    transform: translateY(-10px);
-    background: #334155;
-}
-
-.feature-card h3 {
-    margin-bottom: 15px;
-    color: #22c55e;
 }
 
 
-/* HOW IT WORKS */
+/* HOW */
 
 .how {
     padding: 80px 60px;
@@ -141,7 +134,7 @@ body {
 }
 
 
-/* TESTIMONIALS */
+/* TESTIMONIAL */
 
 .testimonials {
     padding: 80px 60px;
@@ -200,22 +193,34 @@ footer {
     text-align: center;
     padding: 30px;
     background: #111827;
-    margin-top: 50px;
 }
 
 
 /* RESPONSIVE */
 
 @media(max-width:768px) {
+    .menu-toggle {
+        display: block;
+    }
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: #1e293b;
+        width: 200px;
+        flex-direction: column;
+        text-align: center;
+        display: none;
+        padding: 20px 0;
+    }
+    .nav-links.active {
+        display: flex;
+    }
     .hero {
         flex-direction: column;
         text-align: center;
     }
     .steps {
         flex-direction: column;
-    }
-    .feature-container {
-        flex-direction: column;
-        align-items: center;
     }
 }
