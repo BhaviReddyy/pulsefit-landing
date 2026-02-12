@@ -6,75 +6,157 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PulseFit</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="PulseFit AI Fitness Tracking App">
 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header class="navbar">
-        <h2 class="logo">PulseFit</h2>
+    <header>
+        <nav class="navbar">
 
-        <div class="menu-toggle" id="menu-toggle">☰</div>
+            <h2 class="logo">PulseFit</h2>
 
-        <ul class="nav-links" id="nav-links">
-            <li><a href="#">Features</a></li>
-            <li><a href="#">How It Works</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#" class="btn">Join Beta</a></li>
-        </ul>
+            <div class="menu-toggle" id="menu-toggle">☰</div>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#">Features</a></li>
+                <li><a href="#">How It Works</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#" class="cta-btn">Join Beta</a></li>
+            </ul>
+
+        </nav>
     </header>
 
     <!-- HERO -->
     <section class="hero">
+        <div class="hero-text">
+            <h1>Transform Your Fitness with AI</h1>
+            <p>Track workouts, analyze performance and reach goals smarter with PulseFit.</p>
+            <button class="cta-btn">Get Early Access</button>
+        </div>
 
-        <h1>Transform Your Fitness with AI</h1>
-
-        <p>
-            Track workouts, analyze performance and reach goals smarter with PulseFit.
-        </p>
-
-        <button class="btn">Get Early Access</button>
-
-        <img src="images/app.png" class="hero-img">
-
+        <div class="hero-image">
+            <img src="images/app.png" alt="PulseFit App">
+        </div>
     </section>
 
     <!-- FEATURES -->
     <section class="features">
+        <h2 class="section-title">Powerful Features</h2>
 
-        <h2>Powerful Features</h2>
+        <div class="feature-container">
 
-        <div class="feature-grid">
-
-            <div class="card">
+            <div class="feature-card">
+                <i class="fas fa-brain feature-icon"></i>
                 <h3>AI Coaching</h3>
-                <p>Smart personalized workout suggestions.</p>
+                <p>Smart workout recommendations powered by AI.</p>
             </div>
 
-            <div class="card">
+            <div class="feature-card">
+                <i class="fas fa-chart-line feature-icon"></i>
                 <h3>Performance Tracking</h3>
-                <p>Real-time progress monitoring dashboard.</p>
+                <p>Monitor fitness progress with analytics.</p>
             </div>
 
-            <div class="card">
+            <div class="feature-card">
+                <i class="fas fa-watch feature-icon"></i>
                 <h3>Device Integration</h3>
-                <p>Connect watches and fitness devices easily.</p>
+                <p>Connect smart fitness devices seamlessly.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- HOW -->
+    <section class="how">
+        <h2 class="section-title">How It Works</h2>
+
+        <div class="steps">
+            <div class="step">Sign Up</div>
+            <div class="step">Connect Device</div>
+            <div class="step">Track & Improve</div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials">
+        <h2 class="section-title">What Users Say</h2>
+
+        <div class="testimonial-container">
+
+            <div class="testimonial-card">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" class="testimonial-img">
+                <p>"PulseFit improved my workout routine."</p>
+                <h4>Riya Sharma</h4>
+                <span>Fitness Enthusiast</span>
+            </div>
+
+            <div class="testimonial-card">
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" class="testimonial-img">
+                <p>"AI insights are extremely helpful."</p>
+                <h4>Arjun Mehta</h4>
+                <span>Gym Trainer</span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SIGNUP -->
+    <section class="signup">
+        <h2 class="section-title">Join Early Access</h2>
+
+        <form id="signupForm">
+            <input type="text" placeholder="Your Name" id="name">
+            <input type="email" placeholder="Your Email" id="email">
+            <button type="submit">Join Now</button>
+        </form>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="final-cta">
+        <h2>Ready to Transform Your Fitness Journey?</h2>
+        <p>Join PulseFit today and start achieving your fitness goals smarter.</p>
+        <button class="cta-btn">Join Beta Now</button>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div>
+                <h3 class="logo">PulseFit</h3>
+                <p>AI-Powered Fitness for Modern Living.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">How It Works</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
             </div>
 
         </div>
 
-    </section>
+        <div class="footer-bottom">
+            <p>© 2026 PulseFit. All rights reserved.</p>
+        </div>
 
-    <!-- CTA -->
-    <section class="cta">
-        <h2>Ready to Upgrade Your Fitness?</h2>
-        <button class="btn">Join Beta</button>
-    </section>
-
-    <footer>
-        <p>© 2026 PulseFit</p>
     </footer>
 
     <script src="script.js"></script>

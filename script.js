@@ -1,6 +1,20 @@
+// FORM VALIDATION
+document.getElementById("signupForm").addEventListener("submit", function(e) {
+
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+
+    if (name === "" || email === "") {
+        alert("Please fill all fields");
+        e.preventDefault();
+    }
+
+});
+
+// HAMBURGER MENU
 const toggle = document.getElementById("menu-toggle");
-const nav = document.getElementById("nav-links");
+const navLinks = document.getElementById("nav-links");
 
 toggle.addEventListener("click", () => {
-    nav.classList.toggle("active");
+    navLinks.classList.toggle("active");
 });
