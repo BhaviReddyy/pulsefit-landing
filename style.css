@@ -22,8 +22,6 @@ body {
 }
 
 .logo {
-    font-size: 24px;
-    font-weight: 700;
     color: #22c55e;
 }
 
@@ -67,20 +65,6 @@ body {
     gap: 40px;
 }
 
-.hero-text {
-    max-width: 500px;
-}
-
-.hero-text h1 {
-    font-size: 42px;
-    margin-bottom: 20px;
-}
-
-.hero-text p {
-    margin-bottom: 25px;
-    color: #cbd5e1;
-}
-
 .hero img {
     width: 350px;
     border-radius: 10px;
@@ -92,11 +76,6 @@ body {
 .features {
     padding: 80px 60px;
     text-align: center;
-}
-
-.section-title {
-    font-size: 32px;
-    margin-bottom: 40px;
 }
 
 .feature-container {
@@ -111,6 +90,12 @@ body {
     padding: 30px;
     border-radius: 10px;
     width: 280px;
+}
+
+.feature-icon {
+    font-size: 40px;
+    color: #22c55e;
+    margin-bottom: 15px;
 }
 
 
@@ -155,6 +140,13 @@ body {
     width: 280px;
 }
 
+.testimonial-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
 
 /* FORM */
 
@@ -173,17 +165,17 @@ body {
 
 .signup input {
     padding: 12px;
-    border: none;
     border-radius: 6px;
+    border: none;
 }
 
-.signup button {
-    background: #22c55e;
-    padding: 12px;
-    border: none;
-    border-radius: 6px;
-    color: white;
-    cursor: pointer;
+
+/* FINAL CTA */
+
+.final-cta {
+    text-align: center;
+    padding: 80px;
+    background: #1e293b;
 }
 
 
@@ -191,44 +183,32 @@ body {
 
 .footer {
     background: #111827;
-    padding: 60px 60px 20px;
+    padding: 60px;
 }
 
 .footer-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 40px;
-}
-
-.footer-logo h3 {
-    color: #22c55e;
 }
 
 .footer-links ul {
     list-style: none;
 }
 
-.footer-links li {
-    margin: 8px 0;
-}
-
 .footer-links a {
-    text-decoration: none;
     color: #cbd5e1;
+    text-decoration: none;
 }
 
-.footer-social span {
-    display: block;
-    margin: 8px 0;
-    color: #cbd5e1;
+.footer-social i {
+    margin-right: 15px;
+    cursor: pointer;
 }
 
 .footer-bottom {
     text-align: center;
-    margin-top: 40px;
-    font-size: 14px;
-    color: #94a3b8;
+    margin-top: 30px;
 }
 
 
@@ -245,9 +225,7 @@ body {
         background: #1e293b;
         width: 200px;
         flex-direction: column;
-        text-align: center;
         display: none;
-        padding: 20px 0;
     }
     .nav-links.active {
         display: flex;
