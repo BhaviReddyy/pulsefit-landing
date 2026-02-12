@@ -6,7 +6,7 @@
 }
 
 body {
-    background: #0f172a;
+    background: #020617;
     color: white;
 }
 
@@ -82,9 +82,9 @@ body {
 }
 
 .feature-card {
-    background: #1e293b;
+    background: #0b1220;
     padding: 30px;
-    border-radius: 10px;
+    border-radius: 14px;
     width: 280px;
 }
 
@@ -99,33 +99,45 @@ body {
 
 .how {
     padding: 80px 60px;
-    text-align: center;
 }
 
-.how-subtext {
-    color: #cbd5e1;
+.how-header {
     margin-bottom: 40px;
-    max-width: 600px;
-    margin: auto;
 }
 
-.steps {
+.how-header p {
+    color: #94a3b8;
+}
+
+.how-container {
     display: flex;
-    flex-wrap: wrap;
     gap: 30px;
-    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.step-card {
-    background: #1e293b;
+.how-card {
+    background: #0b1220;
     padding: 30px;
-    border-radius: 12px;
-    width: 260px;
+    border-radius: 16px;
+    width: 320px;
+    border: 1px solid #1e293b;
     transition: 0.3s;
 }
 
-.step-card:hover {
+.how-card:hover {
     transform: translateY(-8px);
+    border-color: #22c55e;
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #22c55e, #3b82f6);
+    border-radius: 10px;
+    margin-bottom: 15px;
 }
 
 
@@ -144,9 +156,9 @@ body {
 }
 
 .testimonial-card {
-    background: #1e293b;
+    background: #0b1220;
     padding: 30px;
-    border-radius: 10px;
+    border-radius: 14px;
     width: 280px;
 }
 
@@ -183,7 +195,7 @@ body {
 /* FOOTER */
 
 .footer {
-    background: #111827;
+    background: #020617;
     padding: 60px;
 }
 
@@ -192,22 +204,6 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 40px;
-}
-
-.footer-links ul {
-    list-style: none;
-}
-
-.footer-links a {
-    color: #cbd5e1;
-    text-decoration: none;
-    display: block;
-    margin: 5px 0;
-}
-
-.footer-social i {
-    margin-right: 15px;
-    cursor: pointer;
 }
 
 .footer-bottom {
@@ -228,14 +224,12 @@ body {
 @media(max-width:768px) {
     .menu-toggle {
         display: block;
-        position: absolute;
-        right: 20px;
     }
     .nav-links {
         position: absolute;
         top: 70px;
         right: 0;
-        background: #1e293b;
+        background: #0b1220;
         flex-direction: column;
         width: 200px;
         display: none;
@@ -247,8 +241,9 @@ body {
         flex-direction: column;
         text-align: center;
     }
-    .steps {
+    .how-container {
         flex-direction: column;
+        align-items: center;
     }
     .footer-container {
         flex-direction: column;
