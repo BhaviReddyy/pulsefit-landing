@@ -1,4 +1,3 @@
-// FORM VALIDATION
 document.getElementById("signupForm").addEventListener("submit", function(e) {
 
     let name = document.getElementById("name").value;
@@ -11,7 +10,6 @@ document.getElementById("signupForm").addEventListener("submit", function(e) {
 
 });
 
-// HAMBURGER MENU
 const toggle = document.getElementById("menu-toggle");
 const navLinks = document.getElementById("nav-links");
 
