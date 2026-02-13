@@ -14,7 +14,7 @@
   .navbar {
       background: #0f172a;
       color: white;
-      padding: 18px 50px;
+      padding: 18px 40px;
       position: sticky;
       top: 0;
       z-index: 1000;
@@ -58,10 +58,16 @@
   }
   
   .menu-toggle span {
-      width: 25px;
+      width: 26px;
       height: 3px;
-      background: white;
+      background: #ffffff;
       margin: 4px 0;
+      border-radius: 3px;
+      transition: 0.3s;
+  }
+  
+  .menu-toggle:hover span {
+      background: #00bcd4;
   }
   /* ===== HERO ===== */
   
@@ -148,7 +154,7 @@
       color: #00bcd4;
       margin-bottom: 15px;
   }
-  /* ===== HOW IT WORKS ===== */
+  /* ===== HOW ===== */
   
   .how {
       text-align: center;
@@ -269,9 +275,10 @@
           right: 0;
           background: #0f172a;
           flex-direction: column;
-          width: 200px;
+          width: 220px;
           display: none;
           padding: 20px;
+          border-radius: 8px 0 0 8px;
       }
       .nav-links.active {
           display: flex;
@@ -279,16 +286,28 @@
       .nav-links li {
           margin: 15px 0;
       }
+      /* HERO MOBILE FIX */
       .hero {
           flex-direction: column;
           text-align: center;
-          padding: 60px 20px;
+          padding: 60px 20px 40px;
+          gap: 30px;
       }
       .hero-text {
           align-items: center;
           max-width: 100%;
       }
+      .hero-text h1 {
+          font-size: 32px;
+      }
+      .hero-text p {
+          font-size: 15px;
+      }
+      .btn {
+          margin-top: 10px;
+      }
       .hero-img img {
-          max-width: 320px;
+          max-width: 100%;
+          border-radius: 16px;
       }
   }
