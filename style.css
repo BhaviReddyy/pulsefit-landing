@@ -4,18 +4,31 @@
        box-sizing: border-box;
        font-family: 'Poppins', sans-serif;
    }
-   /* NAVBAR */
+   
+   body {
+       background: #f5f7fa;
+       color: #1e293b;
+   }
+   /* ===== NAVBAR ===== */
    
    .navbar {
        background: #0f172a;
        color: white;
-       padding: 20px;
+       padding: 18px 50px;
+       position: sticky;
+       top: 0;
+       z-index: 1000;
    }
    
    .nav-container {
        display: flex;
        justify-content: space-between;
        align-items: center;
+   }
+   
+   .logo {
+       font-size: 22px;
+       font-weight: 600;
    }
    
    .nav-links {
@@ -30,8 +43,14 @@
    .nav-links a {
        color: white;
        text-decoration: none;
+       font-weight: 500;
+       transition: 0.3s;
    }
-   /* Hamburger */
+   
+   .nav-links a:hover {
+       color: #00bcd4;
+   }
+   /* ===== HAMBURGER ===== */
    
    .menu-toggle {
        display: none;
@@ -45,24 +64,35 @@
        background: white;
        margin: 4px 0;
    }
-   /* HERO */
+   /* ===== HERO ===== */
    
    .hero {
        display: flex;
        justify-content: space-between;
        align-items: center;
-       padding: 80px;
+       padding: 80px 60px;
        background: linear-gradient(120deg, #dff6ff, #e0f7fa);
+       gap: 40px;
    }
    
    .hero-text {
-       max-width: 500px;
+       max-width: 520px;
+       display: flex;
+       flex-direction: column;
+       gap: 18px;
    }
    
-   .hero-img img {
-       max-width: 450px;
-       border-radius: 20px;
+   .hero-text h1 {
+       font-size: 42px;
+       font-weight: 700;
    }
+   
+   .hero-text p {
+       line-height: 1.6;
+       font-size: 16px;
+       color: #334155;
+   }
+   /* CTA BUTTON */
    
    .btn {
        background: #00bcd4;
@@ -70,8 +100,22 @@
        border-radius: 8px;
        color: white;
        text-decoration: none;
+       display: inline-block;
+       width: fit-content;
+       transition: 0.3s;
    }
-   /* GRID */
+   
+   .btn:hover {
+       transform: scale(1.05);
+       background: #0097a7;
+   }
+   
+   .hero-img img {
+       max-width: 450px;
+       border-radius: 20px;
+       box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+   }
+   /* ===== GRID LAYOUT ===== */
    
    .grid-3 {
        display: grid;
@@ -80,7 +124,7 @@
        margin-top: 40px;
        padding: 0 40px;
    }
-   /* FEATURES */
+   /* ===== FEATURES ===== */
    
    .features {
        text-align: center;
@@ -92,13 +136,19 @@
        padding: 30px;
        border-radius: 15px;
        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+       transition: 0.3s;
+   }
+   
+   .card:hover {
+       transform: translateY(-8px);
    }
    
    .card i {
        font-size: 40px;
        color: #00bcd4;
+       margin-bottom: 15px;
    }
-   /* HOW */
+   /* ===== HOW IT WORKS ===== */
    
    .how {
        text-align: center;
@@ -112,7 +162,7 @@
        border-radius: 15px;
        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
    }
-   /* TESTIMONIALS */
+   /* ===== TESTIMONIALS ===== */
    
    .testimonials {
        text-align: center;
@@ -130,8 +180,9 @@
        width: 80px;
        height: 80px;
        border-radius: 50%;
+       margin-bottom: 15px;
    }
-   /* PRICING */
+   /* ===== PRICING ===== */
    
    .pricing {
        text-align: center;
@@ -143,6 +194,7 @@
        padding: 12px;
        width: 250px;
        border-radius: 8px;
+       border: 1px solid #ccc;
    }
    
    .pricing button {
@@ -151,8 +203,15 @@
        color: white;
        border: none;
        border-radius: 8px;
+       margin-left: 10px;
+       cursor: pointer;
+       transition: 0.3s;
    }
-   /* FOOTER */
+   
+   .pricing button:hover {
+       background: #0097a7;
+   }
+   /* ===== FOOTER ===== */
    
    .footer {
        background: #0f172a;
@@ -174,20 +233,31 @@
    .footer-col a {
        color: #cbd5e1;
        text-decoration: none;
+       transition: 0.3s;
+   }
+   
+   .footer-col a:hover {
+       color: #00bcd4;
    }
    
    .social-icons a {
        color: white;
        margin-right: 15px;
        font-size: 20px;
+       transition: 0.3s;
+   }
+   
+   .social-icons a:hover {
+       color: #00bcd4;
    }
    
    .footer-bottom {
        text-align: center;
        border-top: 1px solid #1e293b;
        padding: 20px;
+       color: #94a3b8;
    }
-   /* MOBILE */
+   /* ===== MOBILE ===== */
    
    @media(max-width:768px) {
        .menu-toggle {
@@ -206,8 +276,18 @@
        .nav-links.active {
            display: flex;
        }
+       .nav-links li {
+           margin: 15px 0;
+       }
        .hero {
            flex-direction: column;
            text-align: center;
+           padding: 60px 20px;
+       }
+       .hero-text {
+           align-items: center;
+       }
+       .hero-img img {
+           max-width: 300px;
        }
    }
